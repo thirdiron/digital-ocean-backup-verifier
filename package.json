@@ -1,0 +1,27 @@
+{
+  "name": "digital-ocean-backup-verifier",
+  "version": "0.1.0",
+  "description": "Simple Monitor to Verify Digital Ocean backups",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thirdiron/digital-ocean-backup-verifier.git"
+  },
+  "author": "Mike Lang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thirdiron/digital-ocean-backup-verifier/issues"
+  },
+  "homepage": "https://github.com/thirdiron/digital-ocean-backup-verifier",
+  "dependencies": {
+    "async": "^1.5.2",
+    "digital-ocean-api": "^0.2.0",
+    "dotenv": "^1.2.0",
+    "mongodb": "^2.1.3",
+    "q": "^1.4.1",
+    "underscore": "^1.8.3"
+  }
+}
