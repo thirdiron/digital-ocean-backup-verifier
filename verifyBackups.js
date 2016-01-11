@@ -217,7 +217,7 @@ function respondsToPing(ip) {
 function waitUntilNotNew(dropletId) {
   return q.ninvoke(api, 'getDroplet', dropletId)
     .then((droplet) => {
-      if (!droplet.status === 'new') {
+      if (droplet.status === 'new') {
         console.log(`droplet (${dropletId}) status is still 'new'.  Waiting a minute...`);
         // Wait for a minute before checking again
         return q.delay(60000)
