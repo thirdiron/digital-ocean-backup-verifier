@@ -221,7 +221,7 @@ function waitUntilNotNew(dropletId) {
         console.log(`droplet (${dropletId}) status is still 'new'.  Waiting a minute...`);
         // Wait for a minute before checking again
         return q.delay(60000)
-          .then(() => { return waitUntilActive(dropletId); });
+          .then(() => { return waitUntilNotNew(dropletId); });
       } else {
         console.log(`droplet (${dropletId}) status is now ${droplet.status}.`);
         return droplet;
